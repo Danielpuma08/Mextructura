@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'mextructura.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mextructura',
+        'USER': 'postgres',
+        'PASSWORD': 'Admin123',    # Solo para probar (no uses así en producción)
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
